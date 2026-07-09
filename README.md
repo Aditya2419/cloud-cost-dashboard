@@ -1,5 +1,12 @@
 # Cloud Cost Dashboard
 
+**🔗 Live demo:** [cloud-cost-dashboard-nine.vercel.app](https://cloud-cost-dashboard-nine.vercel.app)
+**⚙️ Backend health check:** [cloud-cost-dashboard-dpaj.onrender.com/health](https://cloud-cost-dashboard-dpaj.onrender.com/health)
+
+> Note: the backend runs on Render's free tier, which spins down after
+> inactivity — the first request after a period of idleness may take
+> 30-60 seconds to wake up. Subsequent requests are fast.
+
 A full-stack cost visibility tool: a React dashboard on the frontend, backed
 by a small Express proxy that authenticates to Azure with a read-only
 service principal and pulls real Cost Management data.
@@ -8,6 +15,7 @@ Falls back to structured mock data automatically if the backend isn't
 running or Azure isn't configured yet, so the UI is always demoable —
 useful in interviews where you may not want to expose a live Azure
 subscription.
+
 
 ## Architecture
 
